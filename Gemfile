@@ -37,7 +37,12 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'pg', group: :production
+gem 'devise'
 
+gem 'twitter-bootstrap-rails'
+gem 'jquery-rails'
+
+gem 'devise-bootstrap-views'
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
