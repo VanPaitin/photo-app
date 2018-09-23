@@ -18,8 +18,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'pry-rails'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -38,7 +39,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'pg', group: :production
 gem 'devise'
-
+gem 'stripe'
 gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
 
@@ -46,6 +47,7 @@ gem 'devise-bootstrap-views'
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -55,6 +57,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'pry-byebug'
 end
 
 group :test do
